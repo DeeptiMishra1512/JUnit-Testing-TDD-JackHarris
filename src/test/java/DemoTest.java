@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -6,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 //GIven: AN array of numbers as strings
 //Task: sort from smallest to largest
-//Restriction: They must stay strings- no converting to numbrs
+//Restriction: They must stay strings - no converting to numbrs
 
 
 
@@ -22,6 +23,8 @@ public class DemoTest {
         //When
         String[] actual =  demo.SortArray(givenTest);
         //Then
-        assertArrayEquals(expected,actual);
+        Assert.assertArrayEquals(expected,actual);
+
+
     }
 }
